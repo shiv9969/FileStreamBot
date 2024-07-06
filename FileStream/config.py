@@ -35,7 +35,6 @@ class Server:
     FQDN = str(env.get("FQDN", BIND_ADDRESS))
     URL = "http{}://{}{}/".format(
         "s" if HAS_SSL else "", FQDN, "" if NO_PORT else ""
- +
     )
 
 
